@@ -57,7 +57,7 @@ export class CanvasSource extends TextureSource<ICanvas>
 
         const canvas = options.resource;
 
-        if (this.pixelWidth !== canvas.width || this.pixelWidth !== canvas.height)
+        if (this.pixelWidth !== canvas.width || this.pixelHeight !== canvas.height)
         {
             this.resizeCanvas();
         }
